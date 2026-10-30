@@ -5,6 +5,15 @@
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  document.querySelectorAll("video").forEach((video) => {
+    const setPlaybackSpeed = () => {
+      video.defaultPlaybackRate = 3;
+      video.playbackRate = 3;
+    };
+    setPlaybackSpeed();
+    video.addEventListener("loadedmetadata", setPlaybackSpeed);
+  });
+
   const isInViewport = (element) => {
     const rect = element.getBoundingClientRect();
     return rect.bottom > 0 && rect.top < window.innerHeight;
