@@ -5,7 +5,7 @@ Project website for **ScheduleGen: Demonstration Generation via Skill Scheduling
 Neel Jawale, Stephan Pleines, Soha Pouya, Yuke Zhu, Ajay Mandlekar, Caelan Garrett.
 
 - Website: https://njawale42.github.io/ScheduleGen/
-- Paper: https://arxiv.org/abs/2610.39429
+- Paper: https://njawale42.github.io/ScheduleGen/assets/ScheduleGen_Paper.pdf
 
 ## Local preview
 
