@@ -399,9 +399,9 @@
               <button type="button" class="is-active" data-comparison-src="assets/compare-cross-dishware.mp4" data-comparison-poster="assets/compare-cross-dishware-poster.jpg" data-comparison-title="Dishware stacking" data-comparison-layout="Cross-Arm layout" data-comparison-label="DexMimicGen and ScheduleGen comparison for Cross-Arm Dishware Stacking" aria-pressed="true"><span>Dishware stacking</span><small>Cross-Arm</small></button>
               <button type="button" data-comparison-src="assets/compare-cross-cube-table.mp4" data-comparison-poster="assets/compare-cross-cube-table-poster.jpg" data-comparison-title="Cube stacking" data-comparison-layout="Cross-Arm table" data-comparison-label="DexMimicGen and ScheduleGen comparison for Cross-Arm table cube stacking" aria-pressed="false"><span>Cube stacking</span><small>Cross-Arm table</small></button>
               <button type="button" data-comparison-src="assets/compare-cross-cube-bin.mp4" data-comparison-poster="assets/compare-cross-cube-bin-poster.jpg" data-comparison-title="Cube stacking" data-comparison-layout="Cross-Arm bin" data-comparison-label="DexMimicGen and ScheduleGen comparison for Cross-Arm bin cube stacking" aria-pressed="false"><span>Cube stacking</span><small>Cross-Arm bin</small></button>
-              <button type="button" data-comparison-src="assets/compare-dishware-normal.mp4" data-comparison-poster="assets/compare-dishware-normal-poster.jpg" data-comparison-title="Dishware stacking" data-comparison-layout="Normal layout" data-comparison-label="DexMimicGen and ScheduleGen comparison for Normal Dishware Stacking" aria-pressed="false"><span>Dishware stacking</span><small>Normal</small></button>
-              <button type="button" data-comparison-src="assets/compare-dishware-cup-cross.mp4" data-comparison-poster="assets/compare-dishware-cup-cross-poster.jpg" data-comparison-title="Dishware stacking" data-comparison-layout="Cup-Cross layout" data-comparison-label="DexMimicGen and ScheduleGen comparison for Cup-Cross Dishware Stacking" aria-pressed="false"><span>Dishware stacking</span><small>Cup Cross</small></button>
-              <button type="button" data-comparison-src="assets/compare-dishware-both-cross.mp4" data-comparison-poster="assets/compare-dishware-both-cross-poster.jpg" data-comparison-title="Dishware stacking" data-comparison-layout="Both-Cross layout" data-comparison-label="DexMimicGen and ScheduleGen comparison for Both-Cross Dishware Stacking" aria-pressed="false"><span>Dishware stacking</span><small>Both Cross</small></button>
+              <button type="button" data-comparison-src="assets/compare-dishware-normal.mp4" data-comparison-poster="assets/compare-dishware-normal-poster.jpg" data-comparison-title="Throwaway trash" data-comparison-layout="Normal layout" data-comparison-label="DexMimicGen and ScheduleGen comparison for Normal Throwaway Trash" aria-pressed="false"><span>Throwaway trash</span><small>Normal</small></button>
+              <button type="button" data-comparison-src="assets/compare-dishware-cup-cross.mp4" data-comparison-poster="assets/compare-dishware-cup-cross-poster.jpg" data-comparison-title="Throwaway trash" data-comparison-layout="Cup-Cross layout" data-comparison-label="DexMimicGen and ScheduleGen comparison for Cup-Cross Throwaway Trash" aria-pressed="false"><span>Throwaway trash</span><small>Cup Cross</small></button>
+              <button type="button" data-comparison-src="assets/compare-dishware-both-cross.mp4" data-comparison-poster="assets/compare-dishware-both-cross-poster.jpg" data-comparison-title="Throwaway trash" data-comparison-layout="Cup + Bin Cross layout" data-comparison-label="DexMimicGen and ScheduleGen comparison for Cup and Bin Cross Throwaway Trash" aria-pressed="false"><span>Throwaway trash</span><small>Cup + Bin Cross</small></button>
             </div>
           </div>
         </div>
@@ -504,7 +504,7 @@
             <div class="flow-output"><span>Output</span><strong>500 demonstrations</strong><small>for each of 7 tasks</small></div>
           </div>
 
-          <p class="benchmark-video-note"><span>Shown below</span> Successful ScheduleGen-generated trajectories. Policy success is reported separately in each card.</p>
+          <p class="benchmark-video-note"><span>Shown below</span> Successful ScheduleGen-generated trajectories. Cards report policy success over 20 held-out Nominal episodes per task.</p>
 
           <div class="benchmark-rail" id="benchmark-rail" tabindex="0" aria-label="Seven RoboDojo task videos">
             <article class="benchmark-card">
@@ -514,7 +514,7 @@
                 </video>
                 <button class="clip-toggle" type="button" data-video="task-swap-t" aria-label="Pause Swap T video"><span aria-hidden="true">Ⅱ</span></button>
               </div>
-              <div><h3>Swap T</h3><p><b>78.0%</b> generation · <b>25%</b> policy</p></div>
+              <div><h3>Swap T</h3><p><b>78.0%</b> generation · <b>25%</b> Nominal policy</p></div>
             </article>
             <article class="benchmark-card">
               <div class="benchmark-video-wrap">
@@ -523,7 +523,7 @@
                 </video>
                 <button class="clip-toggle" type="button" data-video="task-build-tower" aria-label="Pause Build Tower video"><span aria-hidden="true">Ⅱ</span></button>
               </div>
-              <div><h3>Build Tower</h3><p><b>91.7%</b> generation · <b>45%</b> policy</p></div>
+              <div><h3>Build Tower</h3><p><b>91.7%</b> generation · <b>45%</b> Nominal policy</p></div>
             </article>
             <article class="benchmark-card">
               <div class="benchmark-video-wrap">
@@ -532,7 +532,7 @@
                 </video>
                 <button class="clip-toggle" type="button" data-video="task-insert-tubes" aria-label="Pause Insert Tubes video"><span aria-hidden="true">Ⅱ</span></button>
               </div>
-              <div><h3>Insert Tubes</h3><p><b>94.2%</b> generation · <b>45%</b> policy</p></div>
+              <div><h3>Insert Tubes</h3><p><b>94.2%</b> generation · <b>45%</b> Nominal policy</p></div>
             </article>
             <article class="benchmark-card">
               <div class="benchmark-video-wrap">
@@ -541,7 +541,7 @@
                 </video>
                 <button class="clip-toggle" type="button" data-video="task-arrange-number" aria-label="Pause Arrange Largest Number video"><span aria-hidden="true">Ⅱ</span></button>
               </div>
-              <div><h3>Arrange Largest Number</h3><p><b>96.5%</b> generation · <b>50%</b> policy</p></div>
+              <div><h3>Arrange Largest Number</h3><p><b>96.5%</b> generation · <b>50%</b> Nominal policy</p></div>
             </article>
             <article class="benchmark-card">
               <div class="benchmark-video-wrap">
@@ -550,7 +550,7 @@
                 </video>
                 <button class="clip-toggle" type="button" data-video="task-press-number" aria-label="Pause Press by Number video"><span aria-hidden="true">Ⅱ</span></button>
               </div>
-              <div><h3>Press by Number</h3><p><b>100%</b> generation · <b>40%</b> policy</p></div>
+              <div><h3>Press by Number</h3><p><b>100%</b> generation · <b>40%</b> Nominal policy</p></div>
             </article>
             <article class="benchmark-card">
               <div class="benchmark-video-wrap">
@@ -559,7 +559,7 @@
                 </video>
                 <button class="clip-toggle" type="button" data-video="task-sort-dolls" aria-label="Pause Sort Nesting Dolls video"><span aria-hidden="true">Ⅱ</span></button>
               </div>
-              <div><h3>Sort Nesting Dolls</h3><p><b>88.0%</b> generation · <b>65%</b> policy</p></div>
+              <div><h3>Sort Nesting Dolls</h3><p><b>88.0%</b> generation · <b>65%</b> Nominal policy</p></div>
             </article>
             <article class="benchmark-card">
               <div class="benchmark-video-wrap">
@@ -568,7 +568,7 @@
                 </video>
                 <button class="clip-toggle" type="button" data-video="task-classify" aria-label="Pause Classify Objects video"><span aria-hidden="true">Ⅱ</span></button>
               </div>
-              <div><h3>Classify Objects</h3><p><b>75.5%</b> generation · <b>65%</b> policy</p></div>
+              <div><h3>Classify Objects</h3><p><b>75.5%</b> generation · <b>65%</b> Nominal policy</p></div>
             </article>
           </div>
 
@@ -673,7 +673,7 @@
                   </video>
                   <button class="clip-toggle" type="button" data-video="real-trash-normal" aria-label="Pause Throwaway Trash Normal-layout video"><span aria-hidden="true">Ⅱ</span></button>
                 </div>
-                <div><p>Throwaway trash</p><span>Cup and bin on nominal sides</span><strong class="variant-badge">Normal</strong></div>
+                <div><p>Throwaway trash</p><span>Normal layout</span><strong>75%</strong></div>
               </article>
 
               <article class="real-video-card" data-reveal>
@@ -683,7 +683,7 @@
                   </video>
                   <button class="clip-toggle" type="button" data-video="real-trash-cup-cross" aria-label="Pause Throwaway Trash Cup-Cross video"><span aria-hidden="true">Ⅱ</span></button>
                 </div>
-                <div><p>Throwaway trash</p><span>Cup assignment crosses centerline</span><strong class="variant-badge">Cup Cross</strong></div>
+                <div><p>Throwaway trash</p><span>Cup Cross layout</span><strong>70%</strong></div>
               </article>
 
               <article class="real-video-card" data-reveal>
@@ -693,7 +693,7 @@
                   </video>
                   <button class="clip-toggle" type="button" data-video="real-trash-both-cross" aria-label="Pause Throwaway Trash Both-Cross video"><span aria-hidden="true">Ⅱ</span></button>
                 </div>
-                <div><p>Throwaway trash</p><span>Cup and bin assignments cross</span><strong class="variant-badge">Both Cross</strong></div>
+                <div><p>Throwaway trash</p><span>Cup + Bin Cross layout</span><strong>50%</strong></div>
               </article>
             </div>
           </div>
