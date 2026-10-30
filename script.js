@@ -7,8 +7,9 @@
 
   document.querySelectorAll("video").forEach((video) => {
     const setPlaybackSpeed = () => {
-      video.defaultPlaybackRate = 3;
-      video.playbackRate = 3;
+      const rate = Number(video.dataset.playbackRate || 3);
+      video.defaultPlaybackRate = rate;
+      video.playbackRate = rate;
     };
     setPlaybackSpeed();
     video.addEventListener("loadedmetadata", setPlaybackSpeed);

@@ -47,7 +47,15 @@
     </header>
 
     <main id="main-content">
-      <section class="paper-header shell" id="top" aria-labelledby="paper-title">
+      <div class="cinematic-banner shell" id="top">
+        <div class="cinematic-frame">
+          <video id="cinematic-video" class="ambient-video" data-autoplay data-playback-rate="1" muted loop playsinline preload="metadata" poster="assets/schedulegen-cinematic-poster.jpg" aria-label="ScheduleGen cinematic showing coordinated robot motion, planning, and task demonstrations">
+            <source src="assets/schedulegen-cinematic.mp4" type="video/mp4">
+          </video>
+          <button class="clip-toggle" type="button" data-video="cinematic-video" aria-label="Pause cinematic video"><span aria-hidden="true">Ⅱ</span></button>
+        </div>
+      </div>
+      <section class="paper-header shell" aria-labelledby="paper-title">
         <h1 id="paper-title">
           <span>ScheduleGen:</span> Demonstration Generation via Skill Scheduling for Multi-Arm Imitation Learning
         </h1>
@@ -66,7 +74,7 @@
           <div>
             <h2 id="video-title">ScheduleGen overview</h2>
           </div>
-          <p>All videos: 3× playback</p>
+          <p>Overview and task videos: 3× playback</p>
         </div>
 
         <div class="main-player" id="main-player">
